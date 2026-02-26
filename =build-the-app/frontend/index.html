@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Landing Page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Welcome to Our Project</h1>
+            <p>Your journey to mastering projects starts here.</p>
+        </header>
+        <main>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>We are dedicated to delivering top-notch project solutions across various domains.</p>
+            </section>
+            <section id="projects">
+                <h2>Our Projects</h2>
+                <div class="project-list">
+                    <a href="project1.html" class="project-card">
+                        <h3>Project One</h3>
+                        <p>Innovative solution that simplifies tasks.</p>
+                    </a>
+                    <a href="project2.html" class="project-card">
+                        <h3>Project Two</h3>
+                        <p>Next-generation application that enhances productivity.</p>
+                    </a>
+                    <a href="project3.html" class="project-card">
+                        <h3>Project Three</h3>
+                        <p>Robust platform that connects users seamlessly.</p>
+                    </a>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>For inquiries, please reach out via our <a href="contact.html">contact page</a>.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Project Company. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #3a6073, #3a3503);
+        color: #fff;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 20px 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 1s;
+    }
+
+    nav {
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav-links li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    section {
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 1s;
+    }
+
+    .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .project-card {
+        background: rgba(255, 255, 255, 0.2);
+        margin: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #fff;
+        flex: 1 1 30%;
+        min-width: 200px;
+        transition: transform 0.3s, background 0.3s;
+    }
+
+    .project-card:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(1.05);
+    }
+
+    footer {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .nav-links li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .project-list {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project-card {
+            flex: 1 1 100%;
+        }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
