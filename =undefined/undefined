@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Mansuri | Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">Anas Mansuri</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="skills.html" class="nav-link active">Skills</a></li>
+                    <li class="nav-item"><a href="experience.html" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="skills-main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="hero-title">Technical Skills & Expertise</h1>
+                <p class="hero-subtitle">A comprehensive overview of my technical proficiencies, tools, and methodologies.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Skills Intro -->
+            <section class="skills-intro">
+                <p>As a Senior Full Stack Developer with over a decade of experience, I have cultivated a deep, hands-on understanding of modern web technologies. My expertise spans the entire development lifecycle, from conceptual design and architecture to deployment and maintenance. Below is a detailed breakdown of my core competencies.</p>
+            </section>
+
+            <!-- Skills Grid -->
+            <section class="skills-categories">
+                <!-- Frontend Development -->
+                <div class="skill-category">
+                    <h2 class="category-title">
+                        <i class="fas fa-code category-icon"></i> Frontend Development
+                    </h2>
+                    <p class="category-desc">Building responsive, interactive, and user-centric interfaces.</p>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3 class="skill-name">HTML5 & Semantic Markup</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 98%;" data-level="98"></div>
+                            </div>
+                            <p class="skill-detail">Proficient in creating accessible, SEO-friendly structure.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">CSS3 & Preprocessors (SASS/SCSS)</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 95%;" data-level="95"></div>
+                            </div>
+                            <p class="skill-detail">Advanced styling, animations, and maintainable architecture using BEM.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">JavaScript (ES6+)</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 96%;" data-level="96"></div>
+                            </div>
+                            <p class="skill-detail">Modern JS, async programming, DOM manipulation, and design patterns.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">React.js & Ecosystem</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 94%;" data-level="94"></div>
+                            </div>
+                            <p class="skill-detail">Hooks, Context API, State Management, Next.js, and performance optimization.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">Responsive & Mobile-First Design</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 97%;" data-level="97"></div>
+                            </div>
+                            <p class="skill-detail">Frameworks like Bootstrap, Tailwind CSS, and Flexbox/Grid.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">Build Tools & Module Bundlers</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%;" data-level="90"></div>
+                            </div>
+                            <p class="skill-detail">Webpack, Vite, npm/yarn scripts for efficient development workflows.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Development -->
+                <div class="skill-category">
+                    <h2 class="category-title">
+                        <i class="fas fa-server category-icon"></i> Backend Development
+                    </h2>
+                    <p class="category-desc">Architecting scalable, secure, and performant server-side solutions.</p>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3 class="skill-name">Node.js & Express.js</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 96%;" data-level="96"></div>
+                            </div>
+                            <p class="skill-detail">Building RESTful APIs, middleware, authentication, and server logic.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">Python (Django/Flask)</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 88%;" data-level="88"></div>
+                            </div>
+                            <p class="skill-detail">Rapid backend development, data processing, and automation scripts.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">API Design & Development</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 95%;" data-level="95"></div>
+                            </div>
+                            <p class="skill-detail">REST, GraphQL, API versioning, documentation (Swagger/OpenAPI).</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">Authentication & Authorization</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 93%;" data-level="93"></div>
+                            </div>
+                            <p class="skill-detail">JWT, OAuth 2.0, sessions, role-based access control (RBAC).</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">Server Deployment & Management</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 92%;" data-level="92"></div>
+                            </div>
+                            <p class="skill-detail">Linux servers, Nginx/Apache configuration, process management (PM2).</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">Performance Optimization</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 91%;" data-level="91"></div>
+                            </div>
+                            <p class="skill-detail">Caching strategies, database indexing, query optimization, load balancing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & DevOps -->
+                <div class="skill-category">
+                    <h2 class="category-title">
+                        <i class="fas fa-database category-icon"></i> Database & DevOps
+                    </h2>
+                    <p class="category-desc">Managing data persistence and streamlining development-to-production pipelines.</p>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3 class="skill-name">SQL (PostgreSQL, MySQL)</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 94%;" data-level="94"></div>
+                            </div>
+                            <p class="skill-detail">Schema design, complex queries, transactions, and stored procedures.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">NoSQL (MongoDB, Redis)</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 89%;" data-level="89"></div>
+                            </div>
+                            <p class="skill-detail">Document-based data models, caching, and high-speed data retrieval.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">Version Control (Git)</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 98%;" data-level="98"></div>
+                            </div>
+                            <p class="skill-detail">Branching strategies, code reviews, rebasing, and collaborative workflows.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">CI/CD & Containerization</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%;" data-level="90"></div>
+                            </div>
+                            <p class="skill-detail">Docker, GitHub Actions, Jenkins, automated testing and deployment.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">Cloud Platforms (AWS, GCP)</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 87%;" data-level="87"></div>
+                            </div>
+                            <p class="skill-detail">EC2, S3, Lambda, RDS, and cloud-native application deployment.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3 class="skill-name">Testing & Quality Assurance</h3>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 92%;" data-level="92"></div>
+                            </div>
+                            <p class="skill-detail">Unit, Integration, E2E testing with Jest, Mocha, Cypress, Selenium.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills & Methodologies -->
+                <div class="skill-category">
+                    <h2 class="category-title">
+                        <i class="fas fa-users category-icon"></i> Soft Skills & Methodologies
+                    </h2>
+                    <p class="category-desc">Complementing technical skills with effective collaboration and process management.</p>
+                    <div class="skills-grid soft-skills-grid">
+                        <div class="soft-skill-card">
+                            <i class="fas fa-comments soft-skill-icon"></i>
+                            <h3 class="skill-name">Communication</h3>
+                            <p>Articulating complex technical concepts to both technical and non-technical stakeholders.</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <i class="fas fa-tasks soft-skill-icon"></i>
+                            <h3 class="skill-name">Project Management</h3>
+                            <p>Agile/Scrum methodologies, sprint planning, and delivering projects on time and within scope.</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <i class="fas fa-lightbulb soft-skill-icon"></i>
+                            <h3 class="skill-name">Problem Solving</h3>
+                            <p>Analytical thinking, debugging complex systems, and designing innovative solutions.</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <i class="fas fa-handshake soft-skill-icon"></i>
+                            <h3 class="skill-name">Team Leadership</h3>
+                            <p>Mentoring junior developers, conducting code reviews, and fostering a collaborative environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learning Section -->
+            <section class="currently-learning">
+                <h2><i class="fas fa-rocket"></i> Currently Learning & Exploring</h2>
+                <div class="learning-tags">
+                    <span class="learning-tag">Web3 & Blockchain Basics</span>
+                    <span class="learning-tag">Advanced System Design</span>
+                    <span class="learning-tag">Go (Golang)</span>
+                    <span class="learning-tag">Machine Learning Integration</span>
+                    <span class="learning-tag">Serverless Architecture</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Anas Mansuri</h3>
+                    <p>Senior Full Stack Developer crafting robust, user-focused digital solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Connect With Me</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:contact@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Anas Mansuri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if(hamburger) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Close menu when clicking a link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
+
+        // Animate skill bars on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const levelBars = entry.target.querySelectorAll('.level-bar');
+                    levelBars.forEach(bar => {
+                        const width = bar.getAttribute('data-level') + '%';
+                        // Trigger reflow to restart animation
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 100);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observe each skill category
+        document.querySelectorAll('.skill-category').forEach(category => {
+            observer.observe(category);
+        });
+    </script>
+</body>
+</html>
