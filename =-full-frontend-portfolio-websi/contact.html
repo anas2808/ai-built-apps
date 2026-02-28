@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Mansuri Portfolio - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Specific styles for contact page */
+        .contact-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .contact-info, .contact-form {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+        }
+
+        .contact-info h2, .contact-form h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--secondary);
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info ul li i {
+            color: var(--primary);
+            font-size: 1.2em;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: var(--text);
+            font-size: 2em;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary);
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-form button {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .contact-form button:active {
+            transform: translateY(0);
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block; /* Ensure labels take their own line */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                Anas Mansuri
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <h1>Get In Touch</h1>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Feel free to reach out to me for any opportunities or just to say hello!</p>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Ahmedabad, Gujarat, India</li>
+                    <li><i class="fas fa-phone"></i> 7990238770</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:anas2808anas@gmail.com">anas2808anas@gmail.com</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/anas-mansuri-609721253/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/AnasMansuri7" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                     <a href="#" aria-label="Portfolio"><i class="fas fa-link"></i></a> <!-- Placeholder for actual portfolio link -->
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contactForm">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div>
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div id="formMessage" style="margin-top: 15px; color: var(--secondary); font-weight: bold;"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Anas Mansuri. All rights reserved.</p>
+    </footer>
+
+    <!-- Font Awesome CDN for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <!-- Link to scripts.js for any potential future JS interactivity -->
+    <script src="scripts.js"></script>
+
+    <script>
+        // Basic form submission handling (for demonstration, no actual backend)
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            const formMessageDiv = document.getElementById('formMessage');
+
+            // Basic validation
+            if (!name || !email || !message) {
+                formMessageDiv.textContent = 'Please fill in all required fields.';
+                formMessageDiv.style.color = 'red';
+                return;
+            }
+
+            // Simulate sending an email
+            // In a real application, you would use an API endpoint here.
+            formMessageDiv.textContent = 'Thank you for your message! It has been sent.';
+            formMessageDiv.style.color = 'var(--secondary)'; // Use the predefined secondary color
+            this.reset(); // Clear the form
+        });
+    </script>
+</body>
+</html>
