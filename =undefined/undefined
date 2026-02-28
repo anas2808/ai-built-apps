@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Mansuri Portfolio - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS for styling (even though not explicitly in backend, it's in tech stack) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        /* Custom styles based on the blueprint */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --background-color: #ecf0f1;
+            --text-color: #2c3e50;
+            --font-family: Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .content-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Ensures image doesn't overflow rounded corners */
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures image covers the area without distortion */
+            display: block; /* Removes extra space below image */
+        }
+
+        .project-info {
+            padding: 20px;
+            flex-grow: 1; /* Allows text content to grow and fill available space */
+        }
+
+        .project-info h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .project-info p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .project-links {
+            margin-top: 15px;
+            padding: 0 20px 20px 20px; /* Align with project-info padding */
+        }
+
+        .project-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .project-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .footer {
+            background-color: var(--text-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px; /* Space above the footer */
+            font-size: 0.9rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .content-section {
+                padding: 30px 15px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr; /* Stack projects on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/50x50?text=AN" alt="Logo" style="height: 40px; margin-right: 10px; border-radius: 50%;">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" style="color: var(--secondary-color);">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-section">
+        <h1>My Projects</h1>
+        <p class="text-center text-muted">Showcasing a selection of my work and accomplishments.</p>
+
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=E-commerce+Platform" alt="Project 1 Thumbnail">
+                <div class="project-info">
+                    <h3>Anas E-commerce Platform</h3>
+                    <p>Developed a full-stack e-commerce web application using modern web technologies. Features include user authentication, product catalog, shopping cart, and secure payment integration.</p>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">Live Demo</a> |
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250/2ecc71/ffffff?text=Portfolio+Site" alt="Project 2 Thumbnail">
+                <div class="project-info">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Created a responsive and visually appealing personal portfolio website to showcase skills, projects, and experience. Built with HTML, CSS, and Bootstrap for a modern look and feel.</p>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">Live Demo</a> |
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Task+Manager+App" alt="Project 3 Thumbnail">
+                <div class="project-info">
+                    <h3>Task Management Application</h3>
+                    <p>Designed and implemented a task management application allowing users to create, update, and delete tasks. Includes features for task prioritization and deadline tracking.</p>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">Live Demo</a> |
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x250/f39c12/ffffff?text=Blogging+Platform" alt="Project 4 Thumbnail">
+                <div class="project-info">
+                    <h3>Simple Blogging Platform</h3>
+                    <p>A straightforward blogging platform that enables users to publish articles, categorize posts, and interact through comments. Focuses on ease of use and content creation.</p>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">Live Demo</a> |
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+            
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Anas Mansuri. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS for potential future use/components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGY/7Y2bQo2j5h5bM6n3WwM0N7c8xPq2b+rR/M2zE" crossorigin="anonymous"></script>
+</body>
+</html>
+```
