@@ -1,0 +1,1002 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #1E90FF;
+    --secondary-color: #00BFFF;
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+    --navbar-background: var(--background-color);
+    --navbar-text-color: var(--text-color);
+    --footer-background: var(--primary-color);
+    --footer-text-color: var(--background-color);
+    --card-background: rgba(255, 255, 255, 0.2);
+    --card-border: 1px solid rgba(255, 255, 255, 0.3);
+    --button-background: var(--secondary-color);
+    --button-text-color: var(--background-color);
+    --input-background: rgba(255, 255, 255, 0.3);
+    --input-border: 1px solid rgba(255, 255, 255, 0.4);
+    --input-text-color: var(--text-color);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--navbar-background);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 2rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: var(--navbar-text-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.form-box {
+    background: var(--card-background);
+    backdrop-filter: blur(10px);
+    border: var(--card-border);
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.form-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.form-box h2 {
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.form-box h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: var(--input-border);
+    border-radius: 8px;
+    background-color: var(--input-background);
+    color: var(--input-text-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-box button {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(0, 179, 255, 0.4);
+}
+
+.form-box button:hover {
+    background-color: #0080cc;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 179, 255, 0.5);
+}
+
+.form-box .link-text {
+    margin-top: 25px;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.form-box .link-text a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-box .link-text a:hover {
+    color: var(--secondary-color);
+}
+
+/* Animation for the liquid glass effect */
+.water-drop {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: animateWater 5s linear infinite;
+    opacity: 0;
+}
+
+.animation-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: auto; /* Pushes footer to the bottom */
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.footer a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar .nav-links {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar .nav-links li {
+        margin: 0.5rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .form-box {
+        max-width: 90%;
+        padding: 30px;
+    }
+
+    .form-box h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@keyframes animateWater {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(-200px) scale(1.5);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(-400px) scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Specific styles for login/signup toggling - assuming JavaScript will handle adding/removing classes */
+.container.sign-up-mode .right-panel {
+    pointer-events: auto;
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.container.sign-up-mode .left-panel {
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.container.sign-up-mode .form-box {
+    animation: slideForm 0.5s ease-out forwards;
+}
+
+.container.sign-up-mode #login-form {
+    display: none;
+}
+
+.container.sign-up-mode #signup-form {
+    display: block;
+}
+
+.container.sign-up-mode #signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute; /* To overlay on the other form */
+    width: 100%;
+    max-width: 400px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container.sign-up-mode #login-form {
+    display: none;
+}
+.container.sign-up-mode .toggle-forms {
+    display: none; /* Hide the default toggle for now if handled by JS animation */
+}
+
+.toggle-forms {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.toggle-forms span {
+    cursor: pointer;
+    color: var(--primary-color);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.toggle-forms span:hover {
+    color: var(--secondary-color);
+}
+
+/* Added for placeholder animations */
+.input-group input::placeholder {
+    color: var(--input-text-color);
+    opacity: 0.7;
+}
+
+.input-group input:focus::placeholder {
+    opacity: 0.4;
+}
+<ctrl61>/* frontend/styles.css */
+/* File: frontend/styles.css */
+/* Purpose: CSS file for styling the login and signup page with animations and liquid glass design */
+/* Type: frontend */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #1E90FF; /* Dodger Blue */
+    --secondary-color: #00BFFF; /* Deep Sky Blue */
+    --background-color: #f0f8ff; /* Alice Blue, a slightly lighter base than pure white for gradients */
+    --text-color: #333333; /* Darker text for readability */
+    --navbar-background: rgba(255, 255, 255, 0.9);
+    --navbar-text-color: var(--text-color);
+    --footer-background: var(--primary-color);
+    --footer-text-color: #ffffff; /* White text on the primary color footer */
+    --card-background: rgba(255, 255, 255, 0.2); /* Translucent white for liquid glass */
+    --card-border: 1px solid rgba(255, 255, 255, 0.3);
+    --button-background: var(--secondary-color);
+    --button-text-color: #ffffff;
+    --input-background: rgba(255, 255, 255, 0.25);
+    --input-border: 1px solid rgba(255, 255, 255, 0.4);
+    --input-text-color: var(--text-color);
+    --error-color: #ff4d4d;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--navbar-background);
+    backdrop-filter: blur(5px);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .logo:hover {
+    color: var(--secondary-color);
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 2.5rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: var(--navbar-text-color);
+    font-size: 1.15rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    position: relative;
+}
+
+.navbar .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+.navbar .nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden; /* To contain the animation elements */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1100px; /* Slightly wider container */
+    position: relative;
+    z-index: 10;
+}
+
+.form-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 450px; /* Increased max width for form */
+    min-height: 450px; /* Fixed minimum height */
+    perspective: 1000px; /* For 3D transforms */
+}
+
+.form-box {
+    background: var(--card-background);
+    backdrop-filter: blur(15px);
+    border: var(--card-border);
+    border-radius: 20px; /* More rounded corners */
+    padding: 45px; /* Increased padding */
+    width: 100%;
+    max-width: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    backface-visibility: hidden; /* For flipping animations */
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 1;
+}
+
+.form-box.hidden {
+    opacity: 0;
+    transform: scale(0.8) rotateY(180deg); /* Hide and rotate out */
+    pointer-events: none;
+}
+
+.form-box h2 {
+    margin-bottom: 35px;
+    color: var(--primary-color);
+    font-size: 2.2rem; /* Larger heading */
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.form-box h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px; /* Wider underline */
+    height: 4px; /* Thicker underline */
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    border-radius: 3px;
+}
+
+.input-group {
+    margin-bottom: 30px; /* More spacing */
+    width: 100%;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.input-group input {
+    width: calc(100% - 24px); /* Adjusted for padding */
+    padding: 15px 12px;
+    border: var(--input-border);
+    border-radius: 10px; /* More rounded inputs */
+    background-color: var(--input-background);
+    color: var(--input-text-color);
+    font-size: 1.05rem;
+    transition: all 0.4s ease;
+    outline: none;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.input-group input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
+    outline-offset: 2px;
+}
+
+.form-box button {
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    color: var(--button-text-color);
+    border: none;
+    padding: 16px 35px;
+    border-radius: 10px; /* Match input radius */
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    width: 100%;
+    margin-top: 15px;
+    box-shadow: 0 8px 25px rgba(0, 179, 255, 0.5);
+    text-transform: uppercase; /* Uppercase button text */
+    letter-spacing: 1px;
+}
+
+.form-box button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 179, 255, 0.6);
+    filter: brightness(1.1);
+}
+
+.form-box .forgot-password {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-box .forgot-password:hover {
+    color: var(--primary-color);
+}
+
+.form-box .link-text {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.form-box .link-text a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-box .link-text a:hover {
+    color: var(--secondary-color);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 0.9rem;
+    margin-top: 10px;
+    height: 1.2em; /* Reserve space to prevent layout shift */
+}
+
+/* Animation Layer for Water Drops */
+.animation-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.water-drop {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    animation: animateWater 6s linear infinite;
+    opacity: 0;
+    filter: blur(5px); /* Soften the drops */
+}
+
+@keyframes animateWater {
+    0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateY(-150px) scale(1.2);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-300px) scale(1.8);
+        opacity: 0;
+    }
+}
+
+/* Form Switching Animation */
+.container.sign-up-mode .right-panel {
+    transform: rotateY(180deg); /* Flip login form */
+}
+
+.container.sign-up-mode .left-panel {
+    transform: rotateY(-180deg); /* Flip signup form */
+}
+
+/* Transitioning between forms */
+.container.sign-up-mode .form-wrapper {
+    animation: flipWrapper 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.container.sign-up-mode #login-form {
+    opacity: 0;
+    transform: scale(1.2) rotateY(-180deg);
+    pointer-events: none;
+}
+
+.container.sign-up-mode #signup-form {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+    pointer-events: auto;
+    z-index: 2; /* Ensure signup form is on top */
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0.8rem 1.5rem;
+    }
+    .navbar .logo {
+        font-size: 1.8rem;
+    }
+    .navbar .nav-links a {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .form-wrapper {
+        max-width: 90%;
+        min-height: 400px;
+    }
+
+    .form-box {
+        padding: 35px;
+        max-width: 100%;
+    }
+
+    .form-box h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); /* Slight gradient change for mobile */
+    }
+    .navbar {
+        padding: 0.8rem;
+        flex-direction: column;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .navbar .logo {
+        margin-bottom: 10px;
+    }
+    .navbar .nav-links {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar .nav-links li {
+        margin: 0.5rem 1rem;
+    }
+    .main-content {
+        padding: 1rem 0.5rem;
+    }
+
+    .form-wrapper {
+        min-height: 380px;
+    }
+
+    .form-box {
+        padding: 30px 25px;
+    }
+
+    .form-box h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .input-group input {
+        padding: 12px 10px;
+        font-size: 1rem;
+    }
+
+    .form-box button {
+        padding: 14px 25px;
+        font-size: 1.1rem;
+    }
+
+    .link-text, .forgot-password {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    font-size: 0.95rem;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    margin-top: auto; /* Ensures it stays at the bottom */
+}
+
+.footer a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Toggle Button Styling (if needed, otherwise handled by JS links) */
+.toggle-button {
+    background: var(--button-background);
+    color: var(--button-text-color);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px 0;
+    box-shadow: 0 4px 15px rgba(0, 179, 255, 0.4);
+}
+
+.toggle-button:hover {
+    background-color: #0080cc;
+    transform: translateY(-2px);
+}
+
+.toggle-forms {
+    margin-top: 25px;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.toggle-forms span {
+    cursor: pointer;
+    color: var(--primary-color);
+    font-weight: 700;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.toggle-forms span:hover {
+    color: var(--secondary-color);
+}
+.form-box.flipped {
+    transform: rotateY(180deg);
+}
+
+.form-box.unflipped {
+    transform: rotateY(0deg);
+}
+
+.form-box.visible {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+    pointer-events: auto;
+}
+
+.form-box.hidden {
+    opacity: 0;
+    transform: scale(0.8) rotateY(180deg);
+    pointer-events: none;
+}
+
+/* Specific Animations */
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromEdge {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToEdge {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* Flip animation for the whole wrapper */
+@keyframes flipWrapper {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(90deg);
+        animation-timing-function: cubic-bezier(0.5, 0.0, 0.7, 0.5);
+    }
+    100% {
+        transform: rotateY(180deg);
+        animation-timing-function: cubic-bezier(0.3, 0.7, 0.5, 1.0);
+    }
+}
+
+/* Placeholder animation */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px var(--input-background) inset;
+  -webkit-text-fill-color: var(--input-text-color);
+  caret-color: var(--primary-color);
+  transition: background-color 0.5s ease-in-out 0s, text-fill-color 0.5s ease-in-out 0s;
+}
+
+/* Styling for dynamic water droplet creation */
+.droplet {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: dropSwell 3s forwards, fadeOut 3s forwards;
+    opacity: 0;
+    pointer-events: none;
+    filter: blur(4px);
+    mix-blend-mode: screen; /* Blend effect */
+}
+
+@keyframes dropSwell {
+    from {
+        transform: scale(0.5);
+        opacity: 0.8;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/* Ensure input placeholder styles are consistent */
+.input-group input::placeholder {
+    color: var(--input-text-color);
+    opacity: 0.6;
+    font-weight: 400;
+}
+
+.input-group input:focus::placeholder {
+    opacity: 0.3;
+}
+/* Ensure all links in footer are styled properly */
+.footer a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    border-bottom: 1px dashed transparent;
+    padding-bottom: 2px;
+}
+
+.footer a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.8);
+}
