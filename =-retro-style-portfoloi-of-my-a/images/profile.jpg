@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Portfolio - Anas Mansuri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-header">
+                <img src="images/profile.jpg" alt="Anas Mansuri Profile Picture" class="profile-pic">
+                <div class="header-text">
+                    <h1>Anas Mansuri</h1>
+                    <p class="bio">Motivated MCA student and aspiring software developer</p>
+                    <ul class="contact-info">
+                        <li>Ahmedabad, Gujarat, India</li>
+                        <li>7990238770</li>
+                        <li>anas2808anas@gmail.com</li>
+                        <li><a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/your-github-profile" target="_blank">GitHub</a></li>
+                        <li>Portfolio: <a href="https://your-portfolio-link.com" target="_blank">your-portfolio-link.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="home">
+                <h2>Career Objective</h2>
+                <p>Motivated MCA student and aspiring software developer seeking an entry-level opportunity where I can apply my skills in web development, automation, and problem-solving to build real-world solutions while continuously learning and growing in a professional environment.</p>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Master of Computer Applications (MCA)</h3>
+                    <p>LJ Institute of Computer Application | 2025 - 2027</p>
+                </div>
+                <div class="education-item">
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <p>LJ Institute of Computer Application | 2022 - 2025 | CGPA: 7.08</p>
+                </div>
+                <div class="education-item">
+                    <h3>Higher Secondary (XII)</h3>
+                    <p>Ankur High School (GSEB) | 2022 | Percentage: 55.6%</p>
+                </div>
+                <div class="education-item">
+                    <h3>Secondary (X)</h3>
+                    <p>Model English School | 2020 | Percentage: 51.67%</p>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <div class="skills-category">
+                    <h3>Programming Languages:</h3>
+                    <p>Python, Java, C, PHP, JavaScript, Kotlin</p>
+                </div>
+                <div class="skills-category">
+                    <h3>Frameworks & Libraries:</h3>
+                    <p>Django, Laravel, React, React Native, MERN Stack</p>
+                </div>
+                <div class="skills-category">
+                    <h3>Frontend Technologies:</h3>
+                    <p>HTML, CSS, Bootstrap</p>
+                </div>
+                <div class="skills-category">
+                    <h3>Databases:</h3>
+                    <p>MySQL, SQLite, MongoDB</p>
+                </div>
+                <div class="skills-category">
+                    <h3>Tools & Platforms:</h3>
+                    <p>WordPress, Android Studio, Git, GitHub, Jira, n8n Automation, Figma</p>
+                </div>
+                <div class="skills-category">
+                    <h3>Other Skills:</h3>
+                    <p>UI/UX Design, Web Scraping, API Integration, Automation Workflows, AI/ML Basics</p>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2>Professional Experience</h2>
+                <div class="experience-item">
+                    <h3>WordPress Developer</h3>
+                    <p><strong>Aspiration Softech</strong> | 6 Months</p>
+                    <ul>
+                        <li>Developed responsive and SEO-optimized WordPress websites</li>
+                        <li>Customized themes and plugins to meet client requirements</li>
+                        <li>Implemented custom UI designs and learned LMS and e-commerce systems</li>
+                        <li>Gained hands-on experience with real client projects</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Python Developer Intern</h3>
+                    <p><strong>Cognifyz Technologies</strong> | 1 Month</p>
+                    <ul>
+                        <li>Completed multiple Python-based tasks and mini projects</li>
+                        <li>Developed a small game using Python</li>
+                        <li>Learned and implemented basic web scraping techniques</li>
+                        <li>Gained exposure to practical software development workflows</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3>QuickTrade Marketplace</h3>
+                    <a href="https://github.com/your-github-profile/quicktrade" target="_blank">GitHub</a>
+                    <p><strong>Technologies:</strong> Python, Django, HTML, CSS, JavaScript, Bootstrap, SQL</p>
+                    <p>OLX-like marketplace where users can buy and sell products. Features include user authentication, product search and filters, chat system, advertisement auto-expiry, profile management, and ad editing. Custom admin panel and fully mobile-responsive design.</p>
+                </div>
+                <div class="project-item">
+                    <h3>MobHub - Mobile Phone Store</h3>
+                    <a href="https://github.com/your-github-profile/mobhub" target="_blank">GitHub</a>
+                    <p><strong>Technologies:</strong> Python, Django, HTML, CSS, JavaScript, Bootstrap, SQL</p>
+                    <p>E-commerce platform for purchasing mobile phones. Product listing, category-based browsing, and user authentication.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Wrist Gem - Watch Selling Website</h3>
+                    <a href="https://github.com/your-github-profile/wristgem" target="_blank">GitHub</a>
+                    <p><strong>Technologies:</strong> Laravel, PHP, SQL, HTML, CSS, JavaScript, Bootstrap</p>
+                    <p>Online watch store with login/logout and checkout system. Admin-side product and order management.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Save for Later - Bookmark Android App</h3>
+                    <p><strong>Technologies:</strong> Android Studio, Kotlin, Firebase</p>
+                    <p>Android app to save and manage bookmarks. Automatically identifies tags from pasted links. Categorizes bookmarks intelligently for better organization.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Automation Projects</h3>
+                    <p>Built an n8n automation that analyzes job posts received on Telegram and automatically applies for jobs via email or WhatsApp.</p>
+                    <p>Developed an automation to manage GitHub repositories by committing a small daily task automatically to maintain consistency.</p>
+                </div>
+            </section>
+
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <div class="certification-item">
+                    <h3>Google UX Design Professional Certificate</h3>
+                    <p>Google (Coursera) | November 2024</p>
+                    <p>Foundations of UX Design, UX Research and Testing, Wireframing and Prototyping, High-Fidelity Design in Figma, UI Design for Websites, UX Design for Social Good</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Automate Tasks and Processes with Jira</h3>
+                    <p>Coursera Project Network | 2025 | Grade: 100%</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Fake News Detection with Machine Learning</h3>
+                    <p>Coursera Project Network | 2025 | Grade: 83%</p>
+                </div>
+            </section>
+
+            <section id="languages">
+                <h2>Languages</h2>
+                <p>English, Hindi, Gujarati</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me!</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="retro-button">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2023 Anas Mansuri. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
