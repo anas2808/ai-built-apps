@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Glass Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Liquid Glass</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <div class="form-wrapper">
+                <div class="form-content active" id="login-form-content">
+                    <h2 class="form-title">Login</h2>
+                    <form id="login-form">
+                        <div class="input-group">
+                            <input type="email" id="login-email" placeholder=" " required>
+                            <label for="login-email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" id="login-password" placeholder=" " required>
+                            <label for="login-password">Password</label>
+                        </div>
+                        <button type="submit" class="submit-button">Login</button>
+                        <p class="toggle-text">Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+                    </form>
+                    <div id="login-error" class="error-message"></div>
+                    <div id="login-success" class="success-message"></div>
+                </div>
+
+                <div class="form-content" id="signup-form-content">
+                    <h2 class="form-title">Sign Up</h2>
+                    <form id="signup-form">
+                        <div class="input-group">
+                            <input type="text" id="signup-name" placeholder=" " required>
+                            <label for="signup-name">Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="signup-email" placeholder=" " required>
+                            <label for="signup-email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" id="signup-password" placeholder=" " required>
+                            <label for="signup-password">Password</label>
+                        </div>
+                        <button type="submit" class="submit-button">Sign Up</button>
+                        <p class="toggle-text">Already have an account? <a href="#" id="show-login">Login</a></p>
+                    </form>
+                    <div id="signup-error" class="error-message"></div>
+                    <div id="signup-success" class="success-message"></div>
+                </div>
+            </div>
+            <div class="liquid-effect"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Liquid Glass Login. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
